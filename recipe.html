@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChefNote | Recipe</title>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec3e13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221410",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="max-w-md mx-auto">
+        <div class="sticky top-0 z-10 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm">
+            <header class="flex items-center justify-between p-4">
+                <button class="p-2 rounded-full text-background-dark dark:text-background-light">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </button>
+                <h1 class="text-lg font-bold text-background-dark dark:text-background-light">Recipe Details</h1>
+                <button class="p-2 rounded-full text-background-dark dark:text-background-light">
+                    <span class="material-symbols-outlined">edit</span>
+                </button>
+            </header>
+        </div>
+        <main class="pb-24">
+            <div class="h-64 bg-center bg-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAi61w9UdpGK8do-NXs9LDKB6XmB-3-JiZujOSKcpXb5orc_a5F3saoZPJ9dV1gOCidh3bJpZEnfyw8G4fKxEizPS7gZGPDNvhjajwoHaqryg1pC4wpjd2m__wun67qkdS8_YWM_R9ZfCm5bU4eaVuzTYFUTbho76Np5NXSaST2ugQ_JqN_YQSotDaBJRHq0pL3Da287g1o-nsItJJXAkrTyOrJHu9xCnoqu1so0G8W52cKS2DwI6UtVIBkL0GqqP6iKvfJHoTjzKAj");'>
+            </div>
+            <div class="p-6 space-y-6">
+                <div class="space-y-2">
+                    <h2 class="text-2xl font-bold text-background-dark dark:text-background-light">Creamy Tomato Pasta
+                    </h2>
+                    <p class="text-background-dark/70 dark:text-background-light/70">A simple yet delicious pasta dish
+                        with a rich tomato sauce and a touch of cream.</p>
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                        <p class="text-sm text-background-dark/70 dark:text-background-light/70">Prep Time</p>
+                        <p class="font-bold text-background-dark dark:text-background-light">10 min</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-background-dark/70 dark:text-background-light/70">Cook Time</p>
+                        <p class="font-bold text-background-dark dark:text-background-light">20 min</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-background-dark/70 dark:text-background-light/70">Servings</p>
+                        <p class="font-bold text-background-dark dark:text-background-light">2</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="mb-4 text-xl font-bold text-background-dark dark:text-background-light">Instructions</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="flex items-center justify-center flex-shrink-0 w-8 h-8 text-sm font-bold rounded-full bg-primary/20 text-primary">
+                                1</div>
+                            <div class="flex-1">
+                                <p class="font-medium text-background-dark dark:text-background-light">Cook pasta
+                                    according to package instructions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="flex items-center justify-center flex-shrink-0 w-8 h-8 text-sm font-bold rounded-full bg-primary/20 text-primary">
+                                2</div>
+                            <div class="flex-1">
+                                <p class="font-medium text-background-dark dark:text-background-light">Sauté garlic in
+                                    olive oil until fragrant.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="flex items-center justify-center flex-shrink-0 w-8 h-8 text-sm font-bold rounded-full bg-primary/20 text-primary">
+                                3</div>
+                            <div class="flex-1">
+                                <p class="font-medium text-background-dark dark:text-background-light">Add crushed
+                                    tomatoes and simmer for 15 minutes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="mb-4 text-xl font-bold text-background-dark dark:text-background-light">Ingredients</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="flex-1 p-4 space-y-3 border rounded-lg border-primary/20 dark:border-primary/30">
+                                <span class="font-medium text-background-dark dark:text-background-light">Pasta</span>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Weight</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="1" />
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Unit</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="lb" />
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Price</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="$2.50" />
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="p-2 text-background-dark/50 dark:text-background-light/50">
+                                <span class="material-symbols-outlined">drag_indicator</span>
+                            </button>
+                            <button class="p-2 text-red-500">
+                                <span class="material-symbols-outlined">remove_circle_outline</span>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="flex-1 p-4 space-y-3 border rounded-lg border-primary/20 dark:border-primary/30">
+                                <span class="font-medium text-background-dark dark:text-background-light">Crushed
+                                    Tomatoes</span>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Weight</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="1" />
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Unit</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="can" />
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Price</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="$1.50" />
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="p-2 text-background-dark/50 dark:text-background-light/50">
+                                <span class="material-symbols-outlined">drag_indicator</span>
+                            </button>
+                            <button class="p-2 text-red-500">
+                                <span class="material-symbols-outlined">remove_circle_outline</span>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="flex-1 p-4 space-y-3 border rounded-lg border-primary/20 dark:border-primary/30">
+                                <span class="font-medium text-background-dark dark:text-background-light">Heavy
+                                    Cream</span>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Weight</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="0.5" />
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Unit</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="cup" />
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="text-xs text-background-dark/70 dark:text-background-light/70">Price</label>
+                                        <input
+                                            class="w-full p-2 text-sm bg-transparent border rounded-md border-primary/30 focus:ring-primary focus:border-primary text-background-dark dark:text-background-light"
+                                            type="text" value="$3.00" />
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="p-2 text-background-dark/50 dark:text-background-light/50">
+                                <span class="material-symbols-outlined">drag_indicator</span>
+                            </button>
+                            <button class="p-2 text-red-500">
+                                <span class="material-symbols-outlined">remove_circle_outline</span>
+                            </button>
+                        </div>
+                        <button
+                            class="flex items-center justify-center w-full gap-2 py-3 text-sm font-medium border-2 border-dashed rounded-lg border-primary/30 text-primary hover:bg-primary/5">
+                            <span class="material-symbols-outlined">add</span>
+                            Add Ingredient
+                        </button>
+                        <div
+                            class="flex items-center justify-between p-4 border-t border-primary/20 dark:border-primary/30">
+                            <span class="font-bold text-background-dark dark:text-background-light">Total Ingredient
+                                Cost:</span>
+                            <span class="font-bold text-primary">$7.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-background-dark dark:text-background-light">Financial Analysis
+                    </h3>
+                    <div class="p-4 border rounded-lg border-primary/20 dark:border-primary/30">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="relative w-48 h-48">
+                                <canvas id="costBreakdownChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="flex justify-center gap-4 text-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-primary"></span>
+                                <span>Ingredient Costs</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 bg-orange-300 rounded-full dark:bg-orange-600"></span>
+                                <span>Other Costs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-4 border rounded-lg border-primary/20 dark:border-primary/30">
+                            <h4 class="mb-2 font-bold text-background-dark dark:text-background-light">Recipe Financials
+                            </h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Total Cost
+                                    </p>
+                                    <p class="font-bold text-background-dark dark:text-background-light">$8.50</p>
+                                </div>
+                                <div class="p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Sale Price
+                                    </p>
+                                    <p class="font-bold text-background-dark dark:text-background-light">$20.00</p>
+                                </div>
+                                <div class="p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Markup</p>
+                                    <p class="font-bold text-background-dark dark:text-background-light">135.3%</p>
+                                </div>
+                                <div class="p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Profit</p>
+                                    <p class="font-bold text-green-600 dark:text-green-500">$11.50</p>
+                                </div>
+                                <div class="col-span-2 p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Profit
+                                        Margin</p>
+                                    <p class="font-bold text-green-600 dark:text-green-500">57.5%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 border rounded-lg border-primary/20 dark:border-primary/30">
+                            <h4 class="mb-2 font-bold text-background-dark dark:text-background-light">Per Unit
+                                Financials (2 Servings)</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Unit Cost
+                                    </p>
+                                    <p class="font-bold text-background-dark dark:text-background-light">$4.25</p>
+                                </div>
+                                <div class="p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Sale Price
+                                    </p>
+                                    <p class="font-bold text-background-dark dark:text-background-light">$10.00</p>
+                                </div>
+                                <div class="p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Markup</p>
+                                    <p class="font-bold text-background-dark dark:text-background-light">135.3%</p>
+                                </div>
+                                <div class="p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Profit</p>
+                                    <p class="font-bold text-green-600 dark:text-green-500">$5.75</p>
+                                </div>
+                                <div class="col-span-2 p-3 rounded-lg bg-background-light dark:bg-background-dark">
+                                    <p class="text-sm text-background-dark/70 dark:text-background-light/70">Profit
+                                        Margin</p>
+                                    <p class="font-bold text-green-600 dark:text-green-500">57.5%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold text-background-dark dark:text-background-light">Daily RDA Nutrition
+                        Facts</h3>
+                    <div class="p-4 space-y-4 border rounded-lg border-primary/20 dark:border-primary/30">
+                        <p class="text-sm text-center text-background-dark/70 dark:text-background-light/70">Per Serving
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span
+                                    class="font-medium text-background-dark dark:text-background-light">Calories</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="font-bold text-background-dark dark:text-background-light">550</span>
+                                    <span
+                                        class="text-sm text-background-dark/70 dark:text-background-light/70">28%</span>
+                                </div>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-primary/20">
+                                <div class="h-2 rounded-full bg-primary" style="width: 28%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="font-medium text-background-dark dark:text-background-light">Protein</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="font-bold text-background-dark dark:text-background-light">25g</span>
+                                    <span
+                                        class="text-sm text-background-dark/70 dark:text-background-light/70">50%</span>
+                                </div>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-primary/20">
+                                <div class="h-2 rounded-full bg-primary" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="font-medium text-background-dark dark:text-background-light">Carbs</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="font-bold text-background-dark dark:text-background-light">60g</span>
+                                    <span
+                                        class="text-sm text-background-dark/70 dark:text-background-light/70">20%</span>
+                                </div>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-primary/20">
+                                <div class="h-2 rounded-full bg-primary" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="font-medium text-background-dark dark:text-background-light">Fats</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="font-bold text-background-dark dark:text-background-light">22g</span>
+                                    <span
+                                        class="text-sm text-background-dark/70 dark:text-background-light/70">28%</span>
+                                </div>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-primary/20">
+                                <div class="h-2 rounded-full bg-primary" style="width: 28%"></div>
+                            </div>
+                        </div>
+                        <div class="pt-4 mt-4 border-t border-primary/20 dark:border-primary/30">
+                            <div class="grid grid-cols-2 gap-x-4 gap-y-2">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-background-dark/70 dark:text-background-light/70">Vitamin A</span>
+                                    <span class="font-medium text-background-dark dark:text-background-light">15%</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-background-dark/70 dark:text-background-light/70">Vitamin C</span>
+                                    <span class="font-medium text-background-dark dark:text-background-light">45%</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-background-dark/70 dark:text-background-light/70">Calcium</span>
+                                    <span class="font-medium text-background-dark dark:text-background-light">20%</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-background-dark/70 dark:text-background-light/70">Iron</span>
+                                    <span class="font-medium text-background-dark dark:text-background-light">25%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full h-12 mt-6 font-bold text-white rounded-lg bg-primary">Save Changes</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const ctx = document.getElementById('costBreakdownChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Ingredient Costs', 'Other Costs'],
+                datasets: [{
+                    label: 'Cost Breakdown',
+                    data: [7.00, 1.50], // Example data: $7.00 ingredient cost, $1.50 other costs
+                    backgroundColor: [
+                        '#ec3e13', // primary color
+                        '#fdba74' // orange-300
+                    ],
+                    borderColor: [
+                        '#f8f6f6', // background-light
+                        '#f8f6f6'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += new Intl.NumberFormat('en-US', {
+                                        style: 'currency',
+                                        currency: 'USD'
+                                    }).format(context.parsed);
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

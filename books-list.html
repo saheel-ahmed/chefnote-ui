@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChefNote | Marketplace</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec3e13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221410",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-100">
+    <div class="min-h-screen flex flex-col">
+        <header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+            <div class="flex items-center p-4">
+                <h1 class="flex-1 text-center text-lg font-bold">Cookbooks</h1>
+                <button class="p-2">
+                    <svg class="text-zinc-900 dark:text-zinc-100" fill="currentColor" height="24" viewBox="0 0 256 256"
+                        width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="px-4 pb-2 border-b border-zinc-200 dark:border-zinc-800">
+                <nav class="flex space-x-4">
+                    <a class="px-3 py-2 text-sm font-bold border-b-2 border-primary text-primary" href="#">All</a>
+                    <a class="px-3 py-2 text-sm font-bold text-zinc-500 dark:text-zinc-400 border-b-2 border-transparent hover:text-primary dark:hover:text-primary hover:border-primary/50"
+                        href="#">Vegan</a>
+                    <a class="px-3 py-2 text-sm font-bold text-zinc-500 dark:text-zinc-400 border-b-2 border-transparent hover:text-primary dark:hover:text-primary hover:border-primary/50"
+                        href="#">Desserts</a>
+                    <a class="px-3 py-2 text-sm font-bold text-zinc-500 dark:text-zinc-400 border-b-2 border-transparent hover:text-primary dark:hover:text-primary hover:border-primary/50"
+                        href="#">Italian</a>
+                </nav>
+            </div>
+        </header>
+        <main class="flex-grow p-4 space-y-6">
+            <div class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
+                <div class="flex-1 space-y-1">
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Chef Isabella Rossi</p>
+                    <h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">A Taste of Tuscany</h2>
+                    <p class="text-sm text-zinc-600 dark:text-zinc-300">Explore the heart of Italian cuisine with
+                        authentic recipes passed down through generations.</p>
+                </div>
+                <div class="w-24 h-32 flex-shrink-0">
+                    <img alt="A Taste of Tuscany Cookbook Cover" class="w-full h-full object-cover rounded"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmo9zESE1AXFlFG3EnVlEMaAb73Vz7Vib9CiKI_-1d2_XwdiskP2DvJii4me49JYCDrrT_L6J-o5eyRiHmYqhejy9pv0MA3gHRyGFRk9-Q4P1TzhTz34r_G7qx0tTnAnubfmET8as9GduBY0KBaU5sE2AT8_N35M3WT4a4eJJptt2C2-qPOhKolZT5reNOrqSJv1HFMVEKsEys7NxvFDERIyltMPaFMG2AC4GUMt911boA53ilMNI5zwoCB1L-XQIKP7Ktn1WfgWEN" />
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
+                <div class="flex-1 space-y-1">
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Chef Marcus Dubois</p>
+                    <h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Vegan Delights</h2>
+                    <p class="text-sm text-zinc-600 dark:text-zinc-300">Discover a world of plant-based cooking with
+                        innovative and flavorful vegan recipes.</p>
+                </div>
+                <div class="w-24 h-32 flex-shrink-0">
+                    <img alt="Vegan Delights Cookbook Cover" class="w-full h-full object-cover rounded"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn_5O9liKAVEzTtCbFhGH5UcaCSbNJFxYmE00TzNdopuX6d8hUhDBUOYtie7VKgDDOz6jvQvRzmflRL5DIJoV-PHNSbpyrOdZCGSscbpBc1wWRNL2TB5RHuysM22938sToGZ0PXFunfInrTHzsp_Ejxl9z9q_Y9eORE_Xv9zby6oIvgl5r3cDdCyDJ8kWLVu9LyR9c3MSw7pF5LjZ5arfuLbEcr6Np02OQ6NShGPNTLdFkGUZ_lKMeruOj7fNkQOJJnRa0C_jrfI1y" />
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
+                <div class="flex-1 space-y-1">
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Chef Chloe Bennett</p>
+                    <h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Sweet Endings</h2>
+                    <p class="text-sm text-zinc-600 dark:text-zinc-300">Indulge in a collection of decadent desserts,
+                        from classic favorites to modern creations.</p>
+                </div>
+                <div class="w-24 h-32 flex-shrink-0">
+                    <img alt="Sweet Endings Cookbook Cover" class="w-full h-full object-cover rounded"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm9lk9V6--o1SNhbbl3loGLcFKDowg31ivW7EPiQzoVrs4K0L4nRy_wcj9aKR_g_wGtZac9cOg_wRc55RJRIzYPtV640u35b08C_YXjTa6qifJFlWmiPeGAP9O6HecxHEAwexFOwv4u5rRRRhtILafvDNY-4VsW7FKhDwnqEolhhKNgqfTNl4KMKVPN7uASNIesHeEG49d0UBDSMLlTsDsPv9KZbui2effHyju31SVYMgoCy2PDh1FZjtdAnFRi9T4FqJd5blbp3dq" />
+                </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
+                <div class="flex-1 space-y-1">
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400">Chef Luca Moretti</p>
+                    <h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Flavors of the Mediterranean</h2>
+                    <p class="text-sm text-zinc-600 dark:text-zinc-300">Embark on a culinary journey through the
+                        Mediterranean with recipes inspired by the sun-kissed coast.</p>
+                </div>
+                <div class="w-24 h-32 flex-shrink-0">
+                    <img alt="Flavors of the Mediterranean Cookbook Cover" class="w-full h-full object-cover rounded"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQueO7JJ-6qkSIQqz7A-VK1q368OIe5n3bfB7IM5UXGTUHqQ1Sp6_p6JUFMwRZGehIzGx3jF7EYM_9h1DIXtcTiDT4Z5DulieIMd_EYZF0eo3oXC3aqqrJ1SkaNM4rGnvgDCgd0cowYsob3L9p4Azl7dCGsvaLUhc2kt8Qye1-HfObmTIq5mfslk821TEjh5c5vi6UUNMMNGgTI7sz2PIyFM5PyqUsVvj7LrMFltyyn-YYivqh6ftCXOA0zTuqsSuEIhhlDuOIZouS" />
+                </div>
+            </div>
+        </main>
+        <footer
+            class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-zinc-200 dark:border-zinc-800">
+            <nav class="flex justify-around py-2 px-4">
+                <a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
+                    <span class="material-symbols-outlined !text-2xl">restaurant</span>
+                    <span class="text-xs">Recipes</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-primary" href="#">
+                    <span class="material-symbols-outlined !text-2xl">menu_book</span>
+                    <span class="text-xs font-bold">Cookbooks</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
+                    <span class="material-symbols-outlined !text-2xl">storefront</span>
+                    <span class="text-xs">Store</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
+                    <span class="material-symbols-outlined !text-2xl">person</span>
+                    <span class="text-xs">Profile</span>
+                </a>
+            </nav>
+            <div class="pb-safe-area-bottom"></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

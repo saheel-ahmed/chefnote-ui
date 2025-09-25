@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChefNote | Profile</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ec3e13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221410",
+                    },
+                    fontFamily: {
+                        display: ["Epilogue"],
+                    },
+                    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+                },
+            },
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="min-h-screen">
+        <header class="p-4 flex items-center justify-between">
+            <button class="text-gray-800 dark:text-gray-200">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <h1 class="text-xl font-bold">Profile</h1>
+            <button class="text-gray-800 dark:text-gray-200">
+                <span class="material-symbols-outlined">settings</span>
+            </button>
+        </header>
+        <main class="p-4 @container">
+            <section class="flex flex-col items-center text-center">
+                <div class="relative mb-4">
+                    <img alt="Chef Isabella Rossi profile picture" class="w-32 h-32 rounded-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6IqF-SZJo3Z8rOqge9-GtaipkhwA7c7mMI1HXAf70kexw22nSmoUho6QFEcEWjSusU6JvuEdmUIbLRgO4iFwPtwezRXuW4wJEq1E53rbx3j6NelfP6EA0gevLvJSRYtHqdHTWMkyRDKuLn91NxI4nculpclxTNgPhxTI_giPceSDO42m5P3vpI1WorJN87HV2pTGbTl41f3P6b-_KPUGEU5os_XuNtx8YRVPte7--1NVLnZG6dVi14y3Y-Hr5Y8wcWCJMj6k8XutL" />
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Chef Isabella Rossi</h2>
+                <p class="text-gray-600 dark:text-gray-400">Culinary Artist</p>
+                <p class="text-sm text-gray-500 dark:text-gray-500">Joined 2021</p>
+                <button
+                    class="mt-4 w-full max-w-xs bg-primary/20 dark:bg-primary/30 text-primary font-bold py-2 px-4 rounded-lg">Edit
+                    Profile</button>
+            </section>
+            <section class="mt-8 bg-gray-100 dark:bg-gray-800/50 p-4 rounded-xl">
+                <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Subscription Management</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Current Plan</p>
+                        <p class="text-lg font-bold text-primary">Pro Chef</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Next Billing Date</p>
+                        <p class="text-base font-medium text-gray-900 dark:text-white">July 15, 2024</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-col space-y-3">
+                    <button
+                        class="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg shadow-md hover:bg-primary/90 transition-colors flex items-center justify-center">
+                        <span class="material-symbols-outlined mr-2">payment</span>
+                        Manage Payment Method
+                    </button>
+                    <button
+                        class="w-full bg-transparent border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 font-bold py-3 px-4 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors flex items-center justify-center">
+                        <span class="material-symbols-outlined mr-2">cancel</span>
+                        Cancel Subscription
+                    </button>
+                </div>
+            </section>
+            <section class="mt-8">
+                <h3 class="text-xl font-bold mb-4">My Cookbooks</h3>
+                <div
+                    class="flex overflow-x-auto space-x-4 pb-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+                    <div class="flex-shrink-0 w-40">
+                        <img alt="Italian Classics cookbook" class="w-full h-40 object-cover rounded-lg"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUSVGaHtrX-RAsHfPddRJwNda4oFtI2euiubNsc6IdJdc9cqF8fPck4hDn3y1ez5K1AQpUkjRKia2SGhNzHiDhaUYo-1vlvj78Xlz3KUFOEVG0z0otA2OBGAubLn6ZNSR4F266qhRT8Iv8t3kstoNN3DxZGYTC4EVAtu-UutKblmUDrb6nXU2_xayIT_MVoHLCLXSKkV_XK8Zvbei5YTDforPEtSOdi7tlmyx_LNlWZtyDNk1d1liDHRqC0InC1AJipQvh4wAXjRWt" />
+                        <p class="mt-2 font-medium text-gray-800 dark:text-gray-200">Italian Classics</p>
+                    </div>
+                    <div class="flex-shrink-0 w-40">
+                        <img alt="Mediterranean Delights cookbook" class="w-full h-40 object-cover rounded-lg"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVWb3RqjzyVs-pHUKslQZyP9M09a6RTVjvp06c9bb_p86miOEDA3VO3Wpl6y8F4Hlku74x8sK8pH5qag_U2VixxrMvF5AdARfWgdPPd3socpIcbCV-hTkBREmbc98twbhvqshSVa8YZseBQzOwiCyFux0dcuB1970e8rD7a5EnLjjuKzhpUOhAS84n60qpmNaAZGVcatxSGPRdujcTcaaEa6M7KQ19PDC-r7JTKx_A72LANrgtCR-Oeiba-JUhNjrwXofBynTDFtsR" />
+                        <p class="mt-2 font-medium text-gray-800 dark:text-gray-200">Mediterranean Delights</p>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-8">
+                <h3 class="text-xl font-bold mb-4">My Recipes</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="group">
+                        <img alt="Pasta Carbonara recipe" class="w-full h-40 object-cover rounded-lg"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmTRk6MZ-dCqt0QJexND1q4uCKQVtwmoxXn9BSuS6mMx7o6q-UKZrXh72sFV_0Yq0u7xDAlnPNM8GnKGLph6yeky1J7C9klrz04i4qj5OgASSXlWpjOistWmUsjaCM-i9Cv_8NbKM4oI8uD8uej3q4l8ixF8QPS-UhU98sf7R65bhYvEdrz5OzQk8Q9E0uZTfBls6-kr8kp9mKgPTwZ3C3Wc3gJoHCgUKA28m7zqRAk637Yrn4NgEKxl3-6FTwK5hbSAUMG65nAFqB" />
+                        <p class="mt-2 font-medium text-gray-800 dark:text-gray-200">Pasta Carbonara</p>
+                    </div>
+                    <div class="group">
+                        <img alt="Greek Salad recipe" class="w-full h-40 object-cover rounded-lg"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBq5NDcVfOFgJrWnQ1fb3E9Pfdb3i4Pb0PeW_HM6Ftap8rS0OY0DLpKtI9D-zFH30bDOonMR28sBjg7t_va-qDf1UO3oLNqyOAcRcUgHu6t3gCbALpP-yyQKD2Hk03VmbUa8DquUU_sgR6zpYeaCCWL8iPEXGqhhCkXTb2EsTvUL4JjTp8z0XK6lZbHnPOBhtWWBBClCbvaNnp6Q9NeDh5S6NPYB74F5geOHeMH00bYLwIWe8cdwfXpV-ErtnyAp3LwiJvRsCnX87i" />
+                        <p class="mt-2 font-medium text-gray-800 dark:text-gray-200">Greek Salad</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>ChefNote | Recipes</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ec3e13",
+            "background-light": "#f8f6f6",
+            "background-dark": "#221410",
+            "surface-light": "#ffffff",
+            "surface-dark": "#2c1a14",
+            "text-primary-light": "#1b100d",
+            "text-primary-dark": "#f8f6f6",
+            "text-secondary-light": "#9a5b4c",
+            "text-secondary-dark": "#b08a80",
+          },
+          fontFamily: {
+            "display": ["Epilogue", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100 dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
+  <div class="max-w-md mx-auto">
+    <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="flex items-center justify-between p-4">
+        <div class="w-10"></div>
+        <h1 class="text-lg font-bold">My Recipes</h1>
+        <button class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+          <span class="material-symbols-outlined text-2xl">add</span>
+        </button>
+      </div>
+      <div class="px-4 pb-4">
+        <div class="relative">
+          <span
+            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-secondary-light dark:text-text-secondary-dark">search</span>
+          <input
+            class="w-full pl-10 pr-4 py-2.5 rounded-lg bg-surface-light dark:bg-surface-dark border border-text-secondary-light/20 dark:border-text-secondary-dark/20 focus:ring-2 focus:ring-primary focus:border-primary placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark"
+            placeholder="Search by name or keywords" type="text" />
+        </div>
+      </div>
+      <div class="px-4 pb-4 overflow-x-auto">
+        <div class="flex space-x-2">
+          <button
+            class="flex items-center gap-1 px-4 py-2 text-sm font-medium bg-background-light dark:bg-surface-dark rounded-full text-text-primary-light dark:text-text-primary-dark">
+            <span>Category</span>
+            <span class="material-symbols-outlined !text-base">expand_more</span>
+          </button>
+          <button
+            class="flex items-center gap-1 px-4 py-2 text-sm font-medium bg-background-light dark:bg-surface-dark rounded-full text-text-primary-light dark:text-text-primary-dark">
+            <span>Cuisine</span>
+            <span class="material-symbols-outlined !text-base">expand_more</span>
+          </button>
+          <button
+            class="flex items-center gap-1 px-4 py-2 text-sm font-medium bg-background-light dark:bg-surface-dark rounded-full text-text-primary-light dark:text-text-primary-dark">
+            <span>Prep Time</span>
+            <span class="material-symbols-outlined !text-base">expand_more</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="p-4 space-y-4">
+      <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
+        <div class="flex-1 space-y-1">
+          <p class="text-xs font-medium uppercase tracking-wider text-primary">Published</p>
+          <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">Spicy Thai Curry</h3>
+          <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-2">A flavorful and
+            aromatic curry with a perfect balance of spices and coconut milk.</p>
+        </div>
+        <img alt="Spicy Thai Curry" class="w-24 h-24 object-cover rounded-lg"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEEmoPkffDA5DAJfwD8Kml_DpILv-3QUgUcAPFnFZIRVDTGU38aJBhVOMqOvdi2QZaZ1qRKOwxJn38vGHnkiqdWRkwaFID0SCF668R-7hjj9aDhJVq8V41CiDAlK3k6_fTHPjf40bWIDSceIkq7HJ1G-iCLTfHuMdgloUJZs7NIUWRAtVzspKi1c7aq_65BJg6KI5REY4RyGO2rE7D0Q3mrfOzu4Vy15u159VLEJjZR2FAEmqyJMK8Y_eZTrR3MOkE5xIc2FL-bt3w" />
+      </div>
+      <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
+        <div class="flex-1 space-y-1">
+          <p class="text-xs font-medium uppercase tracking-wider text-primary">Published</p>
+          <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">Mediterranean Quinoa Salad
+          </h3>
+          <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-2">A refreshing and
+            healthy salad packed with quinoa, fresh vegetables, and a zesty lemon dressing.</p>
+        </div>
+        <img alt="Mediterranean Quinoa Salad" class="w-24 h-24 object-cover rounded-lg"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrAIadQT8Gnlq-p2eqwDpUpgPYErsJzOVZB6VK7SuhRbdRB7SXJcr_joOh5ZrW4p7bhde2rUGxjRPLEWDcG_D4S-xogS6emH0QoMXaOZxluTE4lxJ4UEhw7HJ2RjnBKzig02QuJ8B6e2F43uGUIsUR8dGsr77Ala04H1TkmDMNS5YtDd5Yi5NdHvirFSZQuOLefd_Q6hB0tJKZqNtK3oyTv6-jItSwLhfDKS0E8qHyw9a6yP9wbGFQPhS-GkNa35EDu9WzwIgz8koN" />
+      </div>
+      <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
+        <div class="flex-1 space-y-1">
+          <p
+            class="text-xs font-medium uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark">
+            Draft</p>
+          <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">Chocolate Avocado Mousse
+          </h3>
+          <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-2">A rich and creamy
+            dessert made with avocado, cocoa powder, and a touch of sweetness.</p>
+        </div>
+        <img alt="Chocolate Avocado Mousse" class="w-24 h-24 object-cover rounded-lg"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKA6bb1pQY0pVUaE3OiHoVcmqkpUIWyEyfRUEOpdGEoUbkR6tbrp_LpAcUS95SmN4N4PlpvUxmO0iRZmnKU5RP5BIcKcZKv57hhNsdgpQWl7r0bFmTL7ytxx0iUrVthAjnxivd3mKM1_sz5WjzRnWJ2fAZ23FDM5bu3VXmWh6v6l7bNlhq-IIiZx_Y3HgrX42VeKhg3li-WwH7mltwXiqQ-qwHNYtaVQkcfeQXBz2Z1uZ8ZMHVX30FTw2GT2s5YSIwraN6i1xVIseJ" />
+      </div>
+    </main>
+    <nav
+      class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-text-secondary-light/20 dark:border-text-secondary-dark/20">
+      <div class="flex justify-around py-2">
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 text-primary" href="#">
+          <span class="material-symbols-outlined">menu_book</span>
+          <span class="text-xs font-medium">Recipes</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 text-text-secondary-light dark:text-text-secondary-dark"
+          href="#">
+          <span class="material-symbols-outlined !font-normal">import_contacts</span>
+          <span class="text-xs font-medium">Cookbooks</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 text-text-secondary-light dark:text-text-secondary-dark"
+          href="#">
+          <span class="material-symbols-outlined !font-normal">storefront</span>
+          <span class="text-xs font-medium">Store</span>
+        </a>
+        <a class="flex flex-col items-center justify-center gap-1 w-1/4 text-text-secondary-light dark:text-text-secondary-dark"
+          href="#">
+          <span class="material-symbols-outlined !font-normal">person</span>
+          <span class="text-xs font-medium">Profile</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+</body>
+
+</html>

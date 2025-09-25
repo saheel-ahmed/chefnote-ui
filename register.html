@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChefNote | Sign Up</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec3e13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221410",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+    <div class="flex flex-col h-screen">
+        <header class="flex items-center p-4">
+            <button class="text-stone-900 dark:text-stone-100">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <h1 class="flex-1 text-center text-lg font-bold">Sign Up</h1>
+            <div class="w-8"></div>
+        </header>
+        <main class="flex-1 overflow-y-auto p-4 space-y-6">
+            <div class="space-y-4">
+                <div>
+                    <label class="text-sm font-medium text-stone-700 dark:text-stone-300" for="email">Email</label>
+                    <input
+                        class="mt-1 block w-full rounded-lg border-stone-300/50 dark:border-stone-700/50 bg-white/50 dark:bg-black/20 focus:border-primary focus:ring-primary h-12 px-4"
+                        id="email" placeholder="Enter your email" type="email" />
+                </div>
+                <div>
+                    <label class="text-sm font-medium text-stone-700 dark:text-stone-300"
+                        for="password">Password</label>
+                    <input
+                        class="mt-1 block w-full rounded-lg border-stone-300/50 dark:border-stone-700/50 bg-white/50 dark:bg-black/20 focus:border-primary focus:ring-primary h-12 px-4"
+                        id="password" placeholder="Enter your password" type="password" />
+                </div>
+                <div>
+                    <label class="text-sm font-medium text-stone-700 dark:text-stone-300" for="confirm-password">Confirm
+                        Password</label>
+                    <input
+                        class="mt-1 block w-full rounded-lg border-stone-300/50 dark:border-stone-700/50 bg-white/50 dark:bg-black/20 focus:border-primary focus:ring-primary h-12 px-4"
+                        id="confirm-password" placeholder="Confirm your password" type="password" />
+                </div>
+            </div>
+            <a href="dashboard.html" class="w-full bg-primary text-white font-bold h-12 rounded-lg text-base">
+                Sign Up
+            </a>
+            <div class="relative flex items-center py-2">
+                <div class="flex-grow border-t border-stone-300 dark:border-stone-700"></div>
+                <span class="flex-shrink mx-4 text-sm text-stone-500 dark:text-stone-400">Or sign up with</span>
+                <div class="flex-grow border-t border-stone-300 dark:border-stone-700"></div>
+            </div>
+            <div class="space-y-3">
+                <button
+                    class="w-full flex items-center justify-center gap-3 bg-primary/10 dark:bg-primary/20 text-stone-800 dark:text-stone-200 font-bold h-12 rounded-lg text-sm">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_17_80)">
+                            <path
+                                d="M47.5327 24.5527C47.5327 22.9227 47.3927 21.3627 47.1327 19.8627H24.2527V28.7727H37.3327C36.8527 31.6927 35.2527 34.1827 32.8927 35.8027V41.6027H40.2327C44.8327 37.4527 47.5327 31.5727 47.5327 24.5527Z"
+                                fill="#4285F4"></path>
+                            <path
+                                d="M24.2527 48.0002C30.7927 48.0002 36.3127 45.8302 40.2327 42.6002L32.8927 36.8002C30.6527 38.2502 27.6927 39.0802 24.2527 39.0802C17.9527 39.0802 12.5927 34.9402 10.7327 29.6002H3.21275V35.5402C7.10275 43.1602 15.0127 48.0002 24.2527 48.0002Z"
+                                fill="#34A853"></path>
+                            <path
+                                d="M10.7327 29.6025C10.2327 28.1325 9.94275 26.5725 9.94275 24.9925C9.94275 23.4125 10.2327 21.8525 10.7327 20.3825V14.4425H3.21275C1.19275 18.5325 0 22.4225 0 24.9925C0 27.5625 1.19275 31.4525 3.21275 35.5425L10.7327 29.6025Z"
+                                fill="#FBBC05"></path>
+                            <path
+                                d="M24.2527 9.91991C28.0927 9.91991 31.2527 11.2799 33.9127 13.7899L40.4127 7.28991C36.2927 3.56991 30.7927 0.999908 24.2527 0.999908C15.0127 0.999908 7.10275 5.83991 3.21275 13.4599L10.7327 19.3999C12.5927 14.0599 17.9527 9.91991 24.2527 9.91991Z"
+                                fill="#EA4335"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_17_80">
+                                <rect fill="white" height="48" width="48"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    Continue with Google
+                </button>
+                <button
+                    class="w-full flex items-center justify-center gap-3 bg-primary/10 dark:bg-primary/20 text-stone-800 dark:text-stone-200 font-bold h-12 rounded-lg text-sm">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2.04C6.5 2.04 2 6.53 2 12.06c0 4.98 3.66 9.14 8.44 9.9v-7.02H8.31v-2.89H10.44V9.84c0-2.12 1.28-3.28 3.18-3.28.9 0 1.67.07 1.9.1v2.46h-1.44c-1.03 0-1.22.49-1.22 1.2v1.56h2.77l-.36 2.89h-2.4v7.02c4.78-.76 8.44-4.92 8.44-9.9C22 6.53 17.5 2.04 12 2.04z">
+                        </path>
+                    </svg>
+                    Continue with Facebook
+                </button>
+            </div>
+        </main>
+        <footer class="p-4 text-center">
+            <a class="text-sm text-stone-500 dark:text-stone-400 underline" href="login.html">
+                Already have an account? Sign In
+            </a>
+        </footer>
+    </div>
+
+</body>
+
+</html>

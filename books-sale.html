@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChefNote | Sales</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ec3e13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221410",
+                    },
+                    fontFamily: {
+                        display: ["Manrope"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+        <div class="flex-grow">
+            <header
+                class="sticky top-0 z-10 flex items-center justify-between border-b border-primary/20 bg-background-light/80 p-4 pb-2 backdrop-blur-sm dark:border-primary/30 dark:bg-background-dark/80">
+                <button class="flex size-10 items-center justify-center rounded-full text-gray-600 dark:text-gray-300">
+                    <span class="material-symbols-outlined"> arrow_back </span>
+                </button>
+                <h1 class="text-lg font-bold">Analytics</h1>
+                <div class="w-10"></div>
+            </header>
+            <div class="border-b border-primary/20 dark:border-primary/30">
+                <div class="flex justify-around px-4">
+                    <a class="flex flex-col items-center justify-center border-b-2 border-transparent py-3 text-sm font-medium text-gray-500 dark:text-gray-400"
+                        href="#"> Recipes </a>
+                    <a class="flex flex-col items-center justify-center border-b-2 border-primary py-3 text-sm font-bold text-primary"
+                        href="#"> Cookbooks </a>
+                </div>
+            </div>
+            <main class="p-4">
+                <section class="mb-6">
+                    <h2 class="mb-3 text-xl font-bold">Earnings</h2>
+                    <div class="rounded-xl bg-primary/10 p-4 dark:bg-primary/20">
+                        <p class="text-sm font-medium text-gray-600 dark:text-gray-300">Total Earnings</p>
+                        <p class="text-3xl font-bold text-gray-900 dark:text-white">$1,234.56</p>
+                    </div>
+                </section>
+                <section class="mb-6">
+                    <h2 class="mb-3 text-xl font-bold">Sales</h2>
+                    <div class="rounded-xl bg-background-light p-4 shadow-sm dark:bg-primary/10">
+                        <div class="flex items-baseline justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-600 dark:text-gray-300">Cookbook Sales</p>
+                                <p class="text-4xl font-bold text-gray-900 dark:text-white">+12%</p>
+                            </div>
+                            <div
+                                class="flex items-center gap-1 rounded-full bg-green-500/10 px-2 py-1 text-sm font-medium text-green-600 dark:bg-green-500/20 dark:text-green-400">
+                                <span>+12%</span>
+                                <span class="text-xs text-gray-500 dark:text-gray-400">vs last 30 days</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 h-48">
+                            <svg fill="none" height="100%" preserveAspectRatio="none" viewBox="0 0 472 150" width="100%"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient gradientUnits="userSpaceOnUse" id="chartGradient" x1="0" x2="0"
+                                        y1="0" y2="150">
+                                        <stop stop-color="var(--tw-color-primary)" stop-opacity="0.3"></stop>
+                                        <stop offset="1" stop-color="var(--tw-color-primary)" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25 V150 H0 Z"
+                                    fill="url(#chartGradient)"></path>
+                                <path class="text-primary"
+                                    d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25"
+                                    stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+                            </svg>
+                        </div>
+                        <div class="flex justify-around text-xs font-bold text-gray-500 dark:text-gray-400">
+                            <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="mb-3 text-xl font-bold">Popular Cookbooks</h2>
+                    <div class="space-y-2">
+                        <div
+                            class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-primary/10">
+                            <div class="h-16 w-16 flex-shrink-0 rounded bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZLKkg33LOK3d5J8xCI8HJsQi8Ge0EMCIY0tazQ3CAq0fknBaO7XxvRli-Y1DeLJRN0mpGNeCf405KpRz_dtIEAFaLJ6ZVHo-rJJ4RbDZFu8yULocxP5yeMGf0OG2Cz2iBtlPSvrgRnFEh7HhqJcZ-rRq5JhpSRqkcDnfwFdBuOm8JYyK8xjYqKwsoa4RNUKnIkpD5lrMDjJFCpTDqT9CYq8ey_7rq4rIaKtIWMJOnZ66VyUAD1St6vX6zkFNAMwcUrlwd701q8Ybj");'>
+                            </div>
+                            <div class="flex-grow">
+                                <p class="font-semibold text-gray-900 dark:text-white">The Art of Baking</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">123 sales</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-primary/10">
+                            <div class="h-16 w-16 flex-shrink-0 rounded bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3a0nLplmHtnU4xbqRCcSVNScacJkInRW1hrktc9CWxJSP0n-JbvCOtQzAQ2s8HT9wrXtV4SGAPfOshI2rWUwWDCXxlG0UXfEOcX4hz_pJgCh1JC2q6oEYi3_IvxHJRfeUmneYEVOnj8fOAwNNDf_oiaUMVzXMyqDoam8Pv94UXwtDOBbWCsWt6DQuhnNUDLUx0kNxDZ1ED4NX3KoO_QUF23Z5lsFzmXJnrnd7WbrPOvA_bjsPFKf_7MDouHIFmP-gMsEPekxb809I");'>
+                            </div>
+                            <div class="flex-grow">
+                                <p class="font-semibold text-gray-900 dark:text-white">Italian Cuisine</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">98 sales</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 rounded-lg bg-background-light p-3 shadow-sm dark:bg-primary/10">
+                            <div class="h-16 w-16 flex-shrink-0 rounded bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLJNCkBZ1j7t28U30LssyGNKSXgePqSjnyzJFUakEUBFJKJkRhZAf-4nBhn98H7YXo5rNdb7iefPiBRhmQCphU4DV1bwdKXXLqANpZBXCBLty0A2TYW0wVmzp2DYhDFqqopIcuEyOty4lweCnG-t4K4vGqH2QkjSBpBYVMqLJvhhU5AhznaqM3EK6Ry-rIcGjyAQsZbmCo_NLVQHjj4SONSXQrvoxM1qI9A-BZaZsXXum9_LvtgWcG9-lvAdj4xERdSUpkh7ERDZfg");'>
+                            </div>
+                            <div class="flex-grow">
+                                <p class="font-semibold text-gray-900 dark:text-white">Vegan Delights</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">76 sales</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer
+            class="sticky bottom-0 border-t border-primary/20 bg-background-light/90 pb-safe backdrop-blur-sm dark:border-primary/30 dark:bg-background-dark/90">
+            <nav class="flex justify-around pt-2">
+                <a class="flex flex-1 flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+                    <span class="material-symbols-outlined"> menu_book </span>
+                    <span class="text-xs font-medium">Recipes</span>
+                </a>
+                <a class="flex flex-1 flex-col items-center gap-1 text-primary" href="#">
+                    <span class="material-symbols-outlined"> auto_stories </span>
+                    <span class="text-xs font-bold">Cookbooks</span>
+                </a>
+                <a class="flex flex-1 flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+                    <span class="material-symbols-outlined"> shopping_bag </span>
+                    <span class="text-xs font-medium">Store</span>
+                </a>
+                <a class="flex flex-1 flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+                    <span class="material-symbols-outlined"> person </span>
+                    <span class="text-xs font-medium">Profile</span>
+                </a>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChefNote | Subscription Plan Selection</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec3e13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221410",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-black dark:text-white">
+    <div class="flex flex-col min-h-screen">
+        <header
+            class="flex items-center justify-between p-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <button class="p-2">
+                <span class="material-symbols-outlined text-black dark:text-white">arrow_back</span>
+            </button>
+            <h1 class="text-lg font-bold text-black dark:text-white absolute left-1/2 -translate-x-1/2">Choose Your Plan
+            </h1>
+        </header>
+        <main class="flex-grow px-4 py-8">
+            <div class="space-y-6">
+                <div
+                    class="bg-primary/5 dark:bg-primary/10 border border-primary/20 dark:border-primary/30 p-6 rounded-xl flex flex-col">
+                    <div class="flex-grow">
+                        <h2 class="text-2xl font-bold text-black dark:text-white">Free</h2>
+                        <p class="mt-2 text-black/60 dark:text-white/60">For those getting started</p>
+                        <p class="mt-4">
+                            <span class="text-4xl font-extrabold text-black dark:text-white">$0</span>
+                            <span class="text-base font-medium text-black/60 dark:text-white/60">/forever</span>
+                        </p>
+                        <ul class="mt-6 space-y-3 text-sm text-black/80 dark:text-white/80">
+                            <li class="flex items-center">
+                                <span class="material-symbols-outlined text-primary mr-3">check_circle</span>
+                                Up to 2 recipes
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-symbols-outlined text-primary mr-3">check_circle</span>
+                                Basic cookbook creation
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-symbols-outlined text-primary mr-3">check_circle</span>
+                                Community support
+                            </li>
+                        </ul>
+                    </div>
+                    <button
+                        class="mt-8 w-full py-3 rounded-lg text-sm font-bold bg-primary/20 dark:bg-primary/30 text-primary">Continue
+                        with Free</button>
+                </div>
+                <div
+                    class="relative bg-primary/10 dark:bg-primary/20 border-2 border-primary p-6 rounded-xl flex flex-col">
+                    <div
+                        class="absolute top-0 right-6 -translate-y-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+                        RECOMMENDED</div>
+                    <div class="flex-grow">
+                        <h2 class="text-2xl font-bold text-black dark:text-white">Pro</h2>
+                        <p class="mt-2 text-black/60 dark:text-white/60">For the professional chef</p>
+                        <p class="mt-4">
+                            <span class="text-4xl font-extrabold text-black dark:text-white">$5</span>
+                            <span class="text-base font-medium text-black/60 dark:text-white/60">/month</span>
+                        </p>
+                        <ul class="mt-6 space-y-3 text-sm text-black/80 dark:text-white/80">
+                            <li class="flex items-center">
+                                <span class="material-symbols-outlined text-primary mr-3">check_circle</span>
+                                Unlimited recipes &amp; cookbooks
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-symbols-outlined text-primary mr-3">check_circle</span>
+                                Sell your creations
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-symbols-outlined text-primary mr-3">check_circle</span>
+                                Premium features unlocked
+                            </li>
+                            <li class="flex items-center">
+                                <span class="material-symbols-outlined text-primary mr-3">check_circle</span>
+                                Priority support
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="mt-8 w-full py-3 rounded-lg text-sm font-bold bg-primary text-white">Upgrade to
+                        Pro</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

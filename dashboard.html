@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChefNote | Dashboard</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ec3e13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221410",
+                    },
+                    fontFamily: {
+                        display: ["Epilogue"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+        <div>
+            <header class="flex items-center justify-between p-4 pb-2">
+                <div class="flex w-12 items-center">
+                    <button
+                        class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-gray-800 dark:text-gray-200 hover:bg-primary/10 dark:hover:bg-primary/20">
+                        <span class="material-symbols-outlined"> settings </span>
+                    </button>
+                </div>
+                <h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white">Dashboard</h1>
+                <div class="flex w-12 items-center justify-end">
+                    <button
+                        class="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-gray-800 dark:text-gray-200 hover:bg-primary/10 dark:hover:bg-primary/20">
+                        <span class="material-symbols-outlined"> notifications </span>
+                        <span
+                            class="absolute top-2 right-2 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">3</span>
+                    </button>
+                </div>
+            </header>
+            <main class="p-4">
+                <section class="mb-6">
+                    <div class="relative">
+                        <span
+                            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+                            search </span>
+                        <input
+                            class="w-full rounded-full border border-primary/20 bg-background-light dark:bg-background-dark py-3 pl-10 pr-4 text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                            placeholder="Search recipes and cookbooks" type="text" />
+                    </div>
+                </section>
+                <section class="mb-6">
+                    <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Quick Menu</h2>
+                    <div class="flex gap-4">
+                        <button class="flex-1 rounded-lg bg-primary py-3 text-sm font-bold text-white shadow-sm">Add
+                            Recipe</button>
+                        <button
+                            class="flex-1 rounded-lg bg-primary/10 dark:bg-primary/20 py-3 text-sm font-bold text-primary">Create
+                            Cookbook</button>
+                    </div>
+                </section>
+                <section class="mb-6">
+                    <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Summary</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="rounded-xl border border-primary/20 bg-background-light dark:bg-background-dark p-4">
+                            <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Total Recipes</p>
+                            <p class="text-2xl font-bold text-gray-900 dark:text-white">12</p>
+                        </div>
+                        <div
+                            class="rounded-xl border border-primary/20 bg-background-light dark:bg-background-dark p-4">
+                            <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Total Books</p>
+                            <p class="text-2xl font-bold text-gray-900 dark:text-white">3</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="mb-6">
+                    <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Recent Recipes</h2>
+                    <div
+                        class="flex gap-4 overflow-x-auto pb-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+                        <div class="w-40 flex-shrink-0">
+                            <div class="mb-2 h-52 w-full rounded-lg bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEjs48hvmB6a1Ko_y3Ty8jVCZzBvbVYDmCZyk09AbGEpQTh7bwm04--2WTd0RWwvTxriGMhFRZ-hiBfBfO_A6KQ6Wprt1EvTgvbD9VZZ8Twov4Mc8wEToUJDpnaMwUCvophyi_HQ5OCWEx6p8o4PhXaqYNyMkGLsLke0rty7OPAA9Rl3C820I0UNWqC8dqJsNcumfmzBLI70ocyuzCGsm6CXv1NrX84wG7K1r_qywg4NVG7HcipXlIbypBvqSxU9QQuT6oSP5cGekb");'>
+                            </div>
+                            <p class="font-medium text-gray-800 dark:text-gray-200">Pasta Carbonara</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Updated 2 days ago</p>
+                        </div>
+                        <div class="w-40 flex-shrink-0">
+                            <div class="mb-2 h-52 w-full rounded-lg bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCS8IAFWm3akVsm8w40TiauX2r1cWRsv91woKEei8OEEwTliYm8_aWobVseaCvhnW6JnUXEWimHlRI-i3DKXTxltojLDCcSNbNsi8_ULGeqSKpHzZoh5z29q7TkRC9qoQAN-1CcfyAwYJZ7uzGdByctFbDpB35G3NwmEdlVNc5k6tGjcazvv3hKKpgSH2Wi26Qe1D3iWYL2KsbKOCfnU3faRq5DVW0OJxdeT4Asln4Q6SV_1HImWo2cqXQ4NEXvbeqm4G1YhPSc_tql");'>
+                            </div>
+                            <p class="font-medium text-gray-800 dark:text-gray-200">Summer Salad</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Updated 1 week ago</p>
+                        </div>
+                        <div class="w-40 flex-shrink-0">
+                            <div class="mb-2 h-52 w-full rounded-lg bg-cover bg-center"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDk0Znkzoz2BcOH81AWWHjfOjm5ap99u965ZX7x-DKjTOjH7fIGM-xAGAErOSg7BKfe2varLx_bl_Kqbh3DCXpN08cnsvl7DDFTu1aggxVarFmsgWnQ41kod_A3b31030SFRzbEGk69lRgqVFPPJ2i1aHuLdvaFsjy0B816_rEZPFPUuQgqG3Xz3gDH5zQxuRiSKDm4PpIEMlaQGR7R-42LCR9KZeTWbpFTFiSsfVUfKCVpFzruU7pCRr1cIhP5ZArTqVgluKHc7tA7");'>
+                            </div>
+                            <p class="font-medium text-gray-800 dark:text-gray-200">Tomato Soup</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Updated 2 weeks ago</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Promotion</h2>
+                    <div
+                        class="rounded-xl overflow-hidden border border-primary/20 bg-background-light dark:bg-background-dark">
+                        <div class="w-full aspect-video bg-cover bg-center"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeOq29ue_jEyZCSwvTAB6wRpaaA_9DG7ALpwS8nn0UnuS3QF0PddYbI_yfl5RU8_BEcuAJTDal4FXhf4DIWt1xKQQh7obgSFA7EgQNLveWR9CL1GOKNRUa-vKS4XMfXyk1xfTIGi59191ukxR2fVpF_AsEMlSAgCeS3FrLrojRTuVsqpMoUBo0soFqtoEtgAie3Se0DdaGjhrDuPHDEZoSQp2t3zNvVIUXGypHILPaqwpK-3nF_z6G3JN7aDxuqLXztEN0t9GWltqK");'>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-lg font-bold text-gray-900 dark:text-white">Promote Your Recipes</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Get insights into recipe performance and
+                                reach more cooks. New feature: Recipe Analytics.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer
+            class="sticky bottom-0 border-t border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <nav class="flex justify-around items-center pt-2 pb-safe-bottom">
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="#">
+                    <span class="material-symbols-outlined">description</span>
+                    <span class="text-xs font-medium">Recipes</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="#">
+                    <span class="material-symbols-outlined">book</span>
+                    <span class="text-xs font-medium">Cookbooks</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="#">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <span class="text-xs font-medium">Store</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-primary" href="#">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+                    <span class="text-xs font-bold">Profile</span>
+                </a>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>

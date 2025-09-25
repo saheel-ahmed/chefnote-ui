@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ChefNote | Books</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ec3e13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221410",
+                    },
+                    fontFamily: {
+                        display: ["Epilogue"],
+                    },
+                    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-200">
+    <div class="flex h-screen flex-col">
+        <header class="flex items-center justify-between p-4">
+            <button class="text-zinc-900 dark:text-zinc-200">
+                <svg class="lucide lucide-x" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+            <h1 class="text-lg font-bold">New Cookbook</h1>
+            <div class="w-6"></div>
+        </header>
+        <main class="flex-1 overflow-y-auto px-4">
+            <div class="mb-6">
+                <label class="sr-only" for="cookbook-name">Cookbook name</label>
+                <input
+                    class="w-full rounded-lg border-0 bg-zinc-200/50 dark:bg-zinc-800/50 p-4 text-base placeholder-zinc-500 dark:placeholder-zinc-400 focus:ring-2 focus:ring-primary"
+                    id="cookbook-name" placeholder="Cookbook name" type="text" />
+            </div>
+            <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-lg font-bold">Recipes</h2>
+                <button
+                    class="flex items-center gap-1 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                    <span class="material-symbols-outlined text-base"> add </span>
+                    Add
+                </button>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center gap-4 rounded-lg bg-background-light p-2 dark:bg-zinc-900/50">
+                    <div class="flex items-center text-zinc-500 dark:text-zinc-400">
+                        <span class="material-symbols-outlined"> drag_handle </span>
+                    </div>
+                    <img alt="Spicy Thai Basil Chicken" class="h-14 w-14 rounded-lg object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaZdlGgO2mgveSFNY_XEXv74Vxw2CVIf7xY-799OYOc1JBf5oLHkPE7e1xedUyniasStFVEKNUNcaTALnyYUDqPS8xNooAK6Z7lbamyBBNWISFBkxckGrS30VqPR6qQI6DneNWbDUQEYu-xHuLi8ah8oWlZ9AWi4dQOxeu2FjbC21gAUm6A14vJ89ku4QQ7KnMY-omS3cSaULa_71uHWJrXJXf83pzpikPcBW7oHTFrPmWF9_tFdsm5weQRmIvAqhMJY65UOXzshX3" />
+                    <div class="flex-1">
+                        <p class="font-medium">Spicy Thai Basil Chicken</p>
+                        <p class="text-sm text-zinc-500 dark:text-zinc-400">10 ingredients · 15 min</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 rounded-lg bg-background-light p-2 dark:bg-zinc-900/50">
+                    <div class="flex items-center text-zinc-500 dark:text-zinc-400">
+                        <span class="material-symbols-outlined"> drag_handle </span>
+                    </div>
+                    <img alt="Creamy Tomato Pasta" class="h-14 w-14 rounded-lg object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4p023dJoxx1BmJzjROacYaM79l_RJ2mSYhNSgL217n8lF-_4znA8XRaKtk6JcqwIXGVatiU3m1pz6oTFkrgnHcc95A-2hdfk5VaHOdQbg3I5vJcBtIjZl0j9e1yY_fmT7apzWDiWJCCWGHWqyD9yl0rDw-JSxKMOHgHX1r_lE5re5DfPi3QNbiMysfMDbx3UlTHNtmbnJqBD_HZyUlKLAbZ1zRY2C4_EVFn0AEuSKRNNJb5YIlHp0EXMrFufyb7ph1FOoFY6HG_7A" />
+                    <div class="flex-1">
+                        <p class="font-medium">Creamy Tomato Pasta</p>
+                        <p class="text-sm text-zinc-500 dark:text-zinc-400">12 ingredients · 20 min</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 rounded-lg bg-background-light p-2 dark:bg-zinc-900/50">
+                    <div class="flex items-center text-zinc-500 dark:text-zinc-400">
+                        <span class="material-symbols-outlined"> drag_handle </span>
+                    </div>
+                    <img alt="Avocado Toast" class="h-14 w-14 rounded-lg object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9etNLdv9ncjIiIgqHgdgcq1fOTDobX6T5ArOlFA2RtTQxx_Wyt5JYNk2lWV_BP5fadJ0ISh9JUKBYx1kUDxrHpjZxBKi7dx6oYmMw7-WW0cEjS78ptGFL2FYDsCTADAdKdIYOUM1a0pU9Dd2YukQPYwMje7DMWy5j2Up7wvpj9e0RNYaDFoiXsbdVul6XdDXBxWTVv3phi2-CHhK0AXgF4sEMo26UUEKCi1Ww7UrproPXSItu-Xvzj-CWTHbeX2KUr2z7mqMGqwoL" />
+                    <div class="flex-1">
+                        <p class="font-medium">Avocado Toast</p>
+                        <p class="text-sm text-zinc-500 dark:text-zinc-400">8 ingredients · 10 min</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer
+            class="border-t border-zinc-200/50 bg-background-light p-4 dark:border-zinc-800/50 dark:bg-background-dark/80">
+            <div class="flex gap-4">
+                <button
+                    class="flex-1 rounded-lg bg-zinc-200/60 py-3 text-sm font-bold text-zinc-900 dark:bg-zinc-800/80 dark:text-zinc-200">Preview</button>
+                <button class="flex-1 rounded-lg bg-primary py-3 text-sm font-bold text-white">Create</button>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
