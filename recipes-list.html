@@ -67,7 +67,7 @@
       <div class="flex items-center justify-between p-4">
         <div class="w-10"></div>
         <h1 class="text-lg font-bold">My Recipes</h1>
-        <button class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+        <button onclick="location='recipe.html'" class="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
           <span class="material-symbols-outlined text-2xl">add</span>
         </button>
       </div>
@@ -101,7 +101,7 @@
       </div>
     </header>
     <main class="p-4 space-y-4">
-      <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
+      <div onclick="location='recipe.html'" class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
         <div class="flex-1 space-y-1">
           <p class="text-xs font-medium uppercase tracking-wider text-primary">Published</p>
           <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">Spicy Thai Curry</h3>
@@ -111,7 +111,7 @@
         <img alt="Spicy Thai Curry" class="w-24 h-24 object-cover rounded-lg"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEEmoPkffDA5DAJfwD8Kml_DpILv-3QUgUcAPFnFZIRVDTGU38aJBhVOMqOvdi2QZaZ1qRKOwxJn38vGHnkiqdWRkwaFID0SCF668R-7hjj9aDhJVq8V41CiDAlK3k6_fTHPjf40bWIDSceIkq7HJ1G-iCLTfHuMdgloUJZs7NIUWRAtVzspKi1c7aq_65BJg6KI5REY4RyGO2rE7D0Q3mrfOzu4Vy15u159VLEJjZR2FAEmqyJMK8Y_eZTrR3MOkE5xIc2FL-bt3w" />
       </div>
-      <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
+      <div onclick="location='recipe.html'" class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
         <div class="flex-1 space-y-1">
           <p class="text-xs font-medium uppercase tracking-wider text-primary">Published</p>
           <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">Mediterranean Quinoa Salad
@@ -122,7 +122,20 @@
         <img alt="Mediterranean Quinoa Salad" class="w-24 h-24 object-cover rounded-lg"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrAIadQT8Gnlq-p2eqwDpUpgPYErsJzOVZB6VK7SuhRbdRB7SXJcr_joOh5ZrW4p7bhde2rUGxjRPLEWDcG_D4S-xogS6emH0QoMXaOZxluTE4lxJ4UEhw7HJ2RjnBKzig02QuJ8B6e2F43uGUIsUR8dGsr77Ala04H1TkmDMNS5YtDd5Yi5NdHvirFSZQuOLefd_Q6hB0tJKZqNtK3oyTv6-jItSwLhfDKS0E8qHyw9a6yP9wbGFQPhS-GkNa35EDu9WzwIgz8koN" />
       </div>
-      <div class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
+      <div onclick="location='recipe.html'" class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
+        <div class="flex-1 space-y-1">
+          <p
+            class="text-xs font-medium uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark">
+            Draft</p>
+          <h3 class="text-base font-bold text-text-primary-light dark:text-text-primary-dark">Chocolate Avocado Mousse
+          </h3>
+          <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-2">A rich and creamy
+            dessert made with avocado, cocoa powder, and a touch of sweetness.</p>
+        </div>
+        <img alt="Chocolate Avocado Mousse" class="w-24 h-24 object-cover rounded-lg"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKA6bb1pQY0pVUaE3OiHoVcmqkpUIWyEyfRUEOpdGEoUbkR6tbrp_LpAcUS95SmN4N4PlpvUxmO0iRZmnKU5RP5BIcKcZKv57hhNsdgpQWl7r0bFmTL7ytxx0iUrVthAjnxivd3mKM1_sz5WjzRnWJ2fAZ23FDM5bu3VXmWh6v6l7bNlhq-IIiZx_Y3HgrX42VeKhg3li-WwH7mltwXiqQ-qwHNYtaVQkcfeQXBz2Z1uZ8ZMHVX30FTw2GT2s5YSIwraN6i1xVIseJ" />
+      </div>
+      <div onclick="location='recipe.html'" class="bg-surface-light dark:bg-surface-dark p-4 rounded-xl flex items-center gap-4">
         <div class="flex-1 space-y-1">
           <p
             class="text-xs font-medium uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark">
@@ -136,30 +149,32 @@
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKA6bb1pQY0pVUaE3OiHoVcmqkpUIWyEyfRUEOpdGEoUbkR6tbrp_LpAcUS95SmN4N4PlpvUxmO0iRZmnKU5RP5BIcKcZKv57hhNsdgpQWl7r0bFmTL7ytxx0iUrVthAjnxivd3mKM1_sz5WjzRnWJ2fAZ23FDM5bu3VXmWh6v6l7bNlhq-IIiZx_Y3HgrX42VeKhg3li-WwH7mltwXiqQ-qwHNYtaVQkcfeQXBz2Z1uZ8ZMHVX30FTw2GT2s5YSIwraN6i1xVIseJ" />
       </div>
     </main>
-    <nav
-      class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-text-secondary-light/20 dark:border-text-secondary-dark/20">
-      <div class="flex justify-around py-2">
-        <a class="flex flex-col items-center justify-center gap-1 w-1/4 text-primary" href="#">
-          <span class="material-symbols-outlined">menu_book</span>
-          <span class="text-xs font-medium">Recipes</span>
-        </a>
-        <a class="flex flex-col items-center justify-center gap-1 w-1/4 text-text-secondary-light dark:text-text-secondary-dark"
-          href="#">
-          <span class="material-symbols-outlined !font-normal">import_contacts</span>
-          <span class="text-xs font-medium">Cookbooks</span>
-        </a>
-        <a class="flex flex-col items-center justify-center gap-1 w-1/4 text-text-secondary-light dark:text-text-secondary-dark"
-          href="#">
-          <span class="material-symbols-outlined !font-normal">storefront</span>
-          <span class="text-xs font-medium">Store</span>
-        </a>
-        <a class="flex flex-col items-center justify-center gap-1 w-1/4 text-text-secondary-light dark:text-text-secondary-dark"
-          href="#">
-          <span class="material-symbols-outlined !font-normal">person</span>
-          <span class="text-xs font-medium">Profile</span>
-        </a>
-      </div>
-    </nav>
+    
+    <footer
+            class="sticky bottom-0 border-t border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <nav class="flex justify-around items-center pt-2 pb-safe-bottom">
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="dashboard.html">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="text-xs font-medium">Home</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="recipes-list.html">
+                    <span class="material-symbols-outlined">description</span>
+                    <span class="text-xs font-medium">Recipes</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="books.html">
+                    <span class="material-symbols-outlined">book</span>
+                    <span class="text-xs font-medium">Cookbooks</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="books-list.html">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <span class="text-xs font-medium">Store</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-primary" href="profile.html">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+                    <span class="text-xs font-bold">Profile</span>
+                </a>
+            </nav>
+        </footer>
   </div>
 
 </body>

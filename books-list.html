@@ -72,7 +72,7 @@
             </div>
         </header>
         <main class="flex-grow p-4 space-y-6">
-            <div class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
+            <div onclick="location='books-sale.html'" class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
                 <div class="flex-1 space-y-1">
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Chef Isabella Rossi</p>
                     <h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">A Taste of Tuscany</h2>
@@ -84,7 +84,7 @@
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmo9zESE1AXFlFG3EnVlEMaAb73Vz7Vib9CiKI_-1d2_XwdiskP2DvJii4me49JYCDrrT_L6J-o5eyRiHmYqhejy9pv0MA3gHRyGFRk9-Q4P1TzhTz34r_G7qx0tTnAnubfmET8as9GduBY0KBaU5sE2AT8_N35M3WT4a4eJJptt2C2-qPOhKolZT5reNOrqSJv1HFMVEKsEys7NxvFDERIyltMPaFMG2AC4GUMt911boA53ilMNI5zwoCB1L-XQIKP7Ktn1WfgWEN" />
                 </div>
             </div>
-            <div class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
+            <div onclick="location='books-sale.html'" class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
                 <div class="flex-1 space-y-1">
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Chef Marcus Dubois</p>
                     <h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Vegan Delights</h2>
@@ -96,7 +96,7 @@
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn_5O9liKAVEzTtCbFhGH5UcaCSbNJFxYmE00TzNdopuX6d8hUhDBUOYtie7VKgDDOz6jvQvRzmflRL5DIJoV-PHNSbpyrOdZCGSscbpBc1wWRNL2TB5RHuysM22938sToGZ0PXFunfInrTHzsp_Ejxl9z9q_Y9eORE_Xv9zby6oIvgl5r3cDdCyDJ8kWLVu9LyR9c3MSw7pF5LjZ5arfuLbEcr6Np02OQ6NShGPNTLdFkGUZ_lKMeruOj7fNkQOJJnRa0C_jrfI1y" />
                 </div>
             </div>
-            <div class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
+            <div onclick="location='books-sale.html'" class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
                 <div class="flex-1 space-y-1">
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Chef Chloe Bennett</p>
                     <h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Sweet Endings</h2>
@@ -108,7 +108,7 @@
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm9lk9V6--o1SNhbbl3loGLcFKDowg31ivW7EPiQzoVrs4K0L4nRy_wcj9aKR_g_wGtZac9cOg_wRc55RJRIzYPtV640u35b08C_YXjTa6qifJFlWmiPeGAP9O6HecxHEAwexFOwv4u5rRRRhtILafvDNY-4VsW7FKhDwnqEolhhKNgqfTNl4KMKVPN7uASNIesHeEG49d0UBDSMLlTsDsPv9KZbui2effHyju31SVYMgoCy2PDh1FZjtdAnFRi9T4FqJd5blbp3dq" />
                 </div>
             </div>
-            <div class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
+            <div onclick="location='books-sale.html'" class="flex items-start gap-4 p-4 bg-white dark:bg-zinc-800/50 rounded-lg shadow-sm">
                 <div class="flex-1 space-y-1">
                     <p class="text-sm text-zinc-500 dark:text-zinc-400">Chef Luca Moretti</p>
                     <h2 class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Flavors of the Mediterranean</h2>
@@ -122,26 +122,29 @@
             </div>
         </main>
         <footer
-            class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-zinc-200 dark:border-zinc-800">
-            <nav class="flex justify-around py-2 px-4">
-                <a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
-                    <span class="material-symbols-outlined !text-2xl">restaurant</span>
-                    <span class="text-xs">Recipes</span>
+            class="sticky bottom-0 border-t border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <nav class="flex justify-around items-center pt-2 pb-safe-bottom">
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="dashboard.html">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="text-xs font-medium">Home</span>
                 </a>
-                <a class="flex flex-col items-center gap-1 text-primary" href="#">
-                    <span class="material-symbols-outlined !text-2xl">menu_book</span>
-                    <span class="text-xs font-bold">Cookbooks</span>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="recipes-list.html">
+                    <span class="material-symbols-outlined">description</span>
+                    <span class="text-xs font-medium">Recipes</span>
                 </a>
-                <a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
-                    <span class="material-symbols-outlined !text-2xl">storefront</span>
-                    <span class="text-xs">Store</span>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="books.html">
+                    <span class="material-symbols-outlined">book</span>
+                    <span class="text-xs font-medium">Cookbooks</span>
                 </a>
-                <a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400" href="#">
-                    <span class="material-symbols-outlined !text-2xl">person</span>
-                    <span class="text-xs">Profile</span>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="books-list.html">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <span class="text-xs font-medium">Store</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-primary" href="profile.html">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+                    <span class="text-xs font-bold">Profile</span>
                 </a>
             </nav>
-            <div class="pb-safe-area-bottom"></div>
         </footer>
     </div>
 

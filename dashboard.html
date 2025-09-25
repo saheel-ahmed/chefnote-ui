@@ -56,19 +56,19 @@
         <div>
             <header class="flex items-center justify-between p-4 pb-2">
                 <div class="flex w-12 items-center">
-                    <button
+                    <a href="profile.html"
                         class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-gray-800 dark:text-gray-200 hover:bg-primary/10 dark:hover:bg-primary/20">
                         <span class="material-symbols-outlined"> settings </span>
-                    </button>
+                    </a>
                 </div>
                 <h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white">Dashboard</h1>
                 <div class="flex w-12 items-center justify-end">
-                    <button
+                    <a href="notifications.html"
                         class="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-gray-800 dark:text-gray-200 hover:bg-primary/10 dark:hover:bg-primary/20">
                         <span class="material-symbols-outlined"> notifications </span>
                         <span
                             class="absolute top-2 right-2 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">3</span>
-                    </button>
+                    </a>
                 </div>
             </header>
             <main class="p-4">
@@ -85,9 +85,9 @@
                 <section class="mb-6">
                     <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Quick Menu</h2>
                     <div class="flex gap-4">
-                        <button class="flex-1 rounded-lg bg-primary py-3 text-sm font-bold text-white shadow-sm">Add
+                        <button onClick="location.href='recipes-list.html'" class="flex-1 rounded-lg bg-primary py-3 text-sm font-bold text-white shadow-sm">Add
                             Recipe</button>
-                        <button
+                        <button onClick="location.href='books-list.html'"
                             class="flex-1 rounded-lg bg-primary/10 dark:bg-primary/20 py-3 text-sm font-bold text-primary">Create
                             Cookbook</button>
                     </div>
@@ -111,21 +111,21 @@
                     <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Recent Recipes</h2>
                     <div
                         class="flex gap-4 overflow-x-auto pb-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
-                        <div class="w-40 flex-shrink-0">
+                        <div onClick="location='recipe.html'" class="w-40 flex-shrink-0">
                             <div class="mb-2 h-52 w-full rounded-lg bg-cover bg-center"
                                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEjs48hvmB6a1Ko_y3Ty8jVCZzBvbVYDmCZyk09AbGEpQTh7bwm04--2WTd0RWwvTxriGMhFRZ-hiBfBfO_A6KQ6Wprt1EvTgvbD9VZZ8Twov4Mc8wEToUJDpnaMwUCvophyi_HQ5OCWEx6p8o4PhXaqYNyMkGLsLke0rty7OPAA9Rl3C820I0UNWqC8dqJsNcumfmzBLI70ocyuzCGsm6CXv1NrX84wG7K1r_qywg4NVG7HcipXlIbypBvqSxU9QQuT6oSP5cGekb");'>
                             </div>
                             <p class="font-medium text-gray-800 dark:text-gray-200">Pasta Carbonara</p>
                             <p class="text-sm text-gray-500 dark:text-gray-400">Updated 2 days ago</p>
                         </div>
-                        <div class="w-40 flex-shrink-0">
+                        <div onClick="location='recipe.html'" class="w-40 flex-shrink-0">
                             <div class="mb-2 h-52 w-full rounded-lg bg-cover bg-center"
                                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCS8IAFWm3akVsm8w40TiauX2r1cWRsv91woKEei8OEEwTliYm8_aWobVseaCvhnW6JnUXEWimHlRI-i3DKXTxltojLDCcSNbNsi8_ULGeqSKpHzZoh5z29q7TkRC9qoQAN-1CcfyAwYJZ7uzGdByctFbDpB35G3NwmEdlVNc5k6tGjcazvv3hKKpgSH2Wi26Qe1D3iWYL2KsbKOCfnU3faRq5DVW0OJxdeT4Asln4Q6SV_1HImWo2cqXQ4NEXvbeqm4G1YhPSc_tql");'>
                             </div>
                             <p class="font-medium text-gray-800 dark:text-gray-200">Summer Salad</p>
                             <p class="text-sm text-gray-500 dark:text-gray-400">Updated 1 week ago</p>
                         </div>
-                        <div class="w-40 flex-shrink-0">
+                        <div onClick="location='recipe.html'" class="w-40 flex-shrink-0">
                             <div class="mb-2 h-52 w-full rounded-lg bg-cover bg-center"
                                 style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDk0Znkzoz2BcOH81AWWHjfOjm5ap99u965ZX7x-DKjTOjH7fIGM-xAGAErOSg7BKfe2varLx_bl_Kqbh3DCXpN08cnsvl7DDFTu1aggxVarFmsgWnQ41kod_A3b31030SFRzbEGk69lRgqVFPPJ2i1aHuLdvaFsjy0B816_rEZPFPUuQgqG3Xz3gDH5zQxuRiSKDm4PpIEMlaQGR7R-42LCR9KZeTWbpFTFiSsfVUfKCVpFzruU7pCRr1cIhP5ZArTqVgluKHc7tA7");'>
                             </div>
@@ -153,19 +153,23 @@
         <footer
             class="sticky bottom-0 border-t border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
             <nav class="flex justify-around items-center pt-2 pb-safe-bottom">
-                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="#">
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="dashboard.html">
+                    <span class="material-symbols-outlined">home</span>
+                    <span class="text-xs font-medium">Home</span>
+                </a>
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="recipes-list.html">
                     <span class="material-symbols-outlined">description</span>
                     <span class="text-xs font-medium">Recipes</span>
                 </a>
-                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="#">
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="books.html">
                     <span class="material-symbols-outlined">book</span>
                     <span class="text-xs font-medium">Cookbooks</span>
                 </a>
-                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="#">
+                <a class="flex flex-col items-center justify-center gap-1 text-gray-600 dark:text-gray-400" href="books-list.html">
                     <span class="material-symbols-outlined">storefront</span>
                     <span class="text-xs font-medium">Store</span>
                 </a>
-                <a class="flex flex-col items-center justify-center gap-1 text-primary" href="#">
+                <a class="flex flex-col items-center justify-center gap-1 text-primary" href="profile.html">
                     <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
                     <span class="text-xs font-bold">Profile</span>
                 </a>
