@@ -10,4 +10,12 @@ Macon Class by Bhupi $10 - 10mins LIVE
   - 20 recipes only
   - No Costing
 
+-- Master copy for cost
+ - Calculate while adding the ingredients
+
+-- Advertisements sections
+   - Banner for premium people
+
+
+
 
